@@ -1,0 +1,2 @@
+# Force Reset
+This file indicates a forced reset of the main branch to a specific commit.
