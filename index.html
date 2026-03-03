@@ -1150,6 +1150,12 @@
       .modal-stats { flex-direction: column; }
       .modal-stat { border-right: none; border-bottom: 1px solid var(--border); }
       .modal-stat:last-child { border-bottom: none; }
+      .learning-outer { grid-template-columns: 1fr !important; gap: 32px !important; }
+      .learning-row { grid-template-columns: 1fr !important; gap: 4px !important; padding: 16px 0 !important; }
+      .learning-row .exp-dot { display: none; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -1560,7 +1566,7 @@
       <h2 class="section-title">Project Gallery</h2>
       <p class="section-intro">Visual samples from selected campaigns and projects. Click any image to view full size.</p>
       <p style="margin-top: 12px; font-size: .82rem; color: var(--ink-light);">
-        
+        <em>Note: Image slots marked with ✦ are ready for direct URLs — replace the placeholder src="" with a direct image link from Dropbox (File → Share → Copy direct link).</em>
       </p>
     </div>
 
@@ -1572,77 +1578,56 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item" data-project="tm-website" data-index="0">
-          <div class="gallery-item" data-project="tm-website" data-index="0">
-  <img src="https://www.dropbox.com/scl/fi/wlef6dxgdp1np60lq6bpv/Ticketmaster-B2B-Website-Redesign-Horizontal.png?rlkey=vmb6lamsk0mf4txa3ckl64g4a&st=xt25l9qk&raw=1
-" alt="Website homepage screenshot" />
-</div>
+          <div class="gallery-placeholder">
             <span class="slot-num">✦ 01</span>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             <span>Website homepage<br/>screenshot</span>
           </div>
         </div>
         <div class="gallery-item" data-project="tm-website" data-index="1">
-          <div class="gallery-item" data-project="tm-website" data-index="0">
- <img src="https://www.dropbox.com/scl/fi/mgjh7crjocetu7d26bnch/business-site-Contact-page.png?rlkey=ou6kvxev3vszqmzh4s5zghx7s&st=grzo3hh2&raw=1
-" alt="Website homepage screenshot" />
-</div>
+          <div class="gallery-placeholder">
             <span class="slot-num">✦ 02</span>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
             <span>Contact / lead gen page</span>
           </div>
         </div>
         <div class="gallery-item" data-project="tm-website" data-index="2">
-          <div class="gallery-item" data-project="tm-website" data-index="0">
- <img src="https://www.dropbox.com/scl/fi/ug36930l0keni5dww8zl2/business-site-Solutions-page.png?rlkey=an5jqxw6gl8hcjzptisa7se53&st=32bqjxr8&raw=1
-" alt="Website homepage screenshot" />
-</div>
+          <div class="gallery-placeholder">
             <span class="slot-num">✦ 03</span>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Interior page / market-specific content</span>
+            <span>Interior page / market-specific layout</span>
           </div>
         </div>
         <div class="gallery-item" data-project="tm-website" data-index="3">
-          <div class="gallery-item" data-project="tm-website" data-index="0">
- <img src="https://www.dropbox.com/scl/fi/p6qtcvrpnokij81d7bukq/Channel-and-User-Journey-Analysis.png?rlkey=j6q9wt2cxr43fzza5k8r4a273&st=nmq4j77m&raw=1
-" alt="Channel analysis insight" />
-</div>
-  
+          <div class="gallery-placeholder">
             <span class="slot-num">✦ 04</span>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-            <span>Channel analysis insight</span>
+            <span>Analytics / results slide</span>
           </div>
         </div>
       </div>
-      <a class="gallery-dropbox-link" href="https://www.dropbox.com/scl/fo/mifp7qne97v7kasxca7sd/AP3OZ8nJ4kuXq6EE6AcXuLw" target="_blank" rel="noopener">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-
-      </a>
     </div>
 
-    <!-- PROJECT 2:  NBA/NHL Channel Optimization -->
+    <!-- PROJECT 2: NHL Sweepstakes -->
     <div class="gallery-project fade-up">
       <div class="gallery-project-header">
-        <div class="gallery-project-title">NBA & NHL Digital Channel Optimization</div>
+        <div class="gallery-project-title">NBA &amp; NHL Digital Channels</div>
         <span class="tag">Integrated Campaign</span>
       </div>
       <div class="gallery-grid">
         <div class="gallery-item" data-project="nhl-sweep" data-index="0">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 01</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Entry page / Shortstack form</span></div>
-        </div>
+          <img src="https://www.dropbox.com/scl/fi/p783ejhzvau38a1i47sxn/NHL-Sweepstakes-ROS-Banners.png?rlkey=tmv85dk0r6rvmixrl8z3za5e3&st=qxcews96&raw=1" alt="NHL Playoff Sweepstakes ROS banners" loading="lazy" />
+        
         <div class="gallery-item" data-project="nhl-sweep" data-index="1">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 02</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Social ad creative</span></div>
-        </div>
+          <img src="https://www.dropbox.com/scl/fi/if2daqt1bqwhfbq250av0/NHL-Playoff-Sweeps-Paid-Social-Example.png?rlkey=nuzheurjwd0cdpubeiu2gxnaz&st=7foddmgl&raw=1" alt="NHL Playoff Sweepstakes paid social" loading="lazy" />
+        
         <div class="gallery-item" data-project="nhl-sweep" data-index="2">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 03</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>NHL.com banner placement</span></div>
-        </div>
+          <img src="https://www.dropbox.com/scl/fi/8pln9coqhyg1s2bwlichr/NBA-BR-Takeover-Skin.png?rlkey=wji8qpjgjviu84ronpyh0rq39&st=gemttl78&raw=1" alt="NBA Bleacher Report takeover" loading="lazy" />
+        
         <div class="gallery-item" data-project="nhl-sweep" data-index="3">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 04</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>CRM / email creative</span></div>
-        </div>
+          <img src="https://www.dropbox.com/scl/fi/p0zdo38tpc53fqrist9ex/NBA-Nav-Ticket-Link.png?rlkey=60la5j7nrjocvj7soupbv9v3n&st=k9mr75gs&raw=1" alt="NBA.com nav ticket link" loading="lazy" />
+        
       </div>
-      <a class="gallery-dropbox-link" href="https://www.dropbox.com/scl/fo/2v8jrxbsfa74xvv144a6w/ADoQxio2taitJCJuIgPRzTs" target="_blank" rel="noopener">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-
-      </a>
     </div>
 
     <!-- PROJECT 3: Monster Jam Spin Master -->
@@ -1653,22 +1638,22 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item" data-project="spinmaster" data-index="0">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 01</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Display tour setup / Walmart floor</span></div>
+          <img src="https://www.dropbox.com/scl/fi/oadj9qj7l5ziut3e8jsr8/Spin-Master-Experiential-Tour-Pic.jpg?rlkey=1gxkqlvfebruth7dtaougj7kk&st=d9cw3yk5&raw=1" alt="Tour entrance" loading="lazy" />
+        
         </div>
         <div class="gallery-item" data-project="spinmaster" data-index="1">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 02</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Monster truck display feature</span></div>
+          <img src="https://www.dropbox.com/scl/fi/wy8sdnruzdw31z3dcmakm/Spin-Master-Experiential_Influencer-Social.png?rlkey=gkcrb515p5hkydhukyl2rqphb&st=klzamg33&raw=1" alt="Social influencer" loading="lazy" />
+        
         </div>
         <div class="gallery-item" data-project="spinmaster" data-index="2">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 03</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Product / toy line display</span></div>
+          <img src="https://www.dropbox.com/scl/fi/i9k13lppskstpgknxsq73/IMG_0039.HEIC?rlkey=d2i1phqhrpcx8ltpl4p65k5f6&st=02cktpu3&raw=1" alt="In-retail display" loading="lazy" />
+        
         </div>
         <div class="gallery-item" data-project="spinmaster" data-index="3">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 04</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Crowd / activation day</span></div>
+          <img src="https://www.dropbox.com/scl/fi/c9lnl51liqd2fwfllutal/IMG_0021.heic?rlkey=q6kf0ap1d8bbqxuns9ez0tbg3&st=kv0365gm&raw=1" alt="Monster truck display" loading="lazy" />
+        
         </div>
       </div>
-      <a class="gallery-dropbox-link" href="https://www.dropbox.com/scl/fo/hocx2nd0gfjmc1jrjre1n/AELRVKWqEzz5B0XS80SaL-M" target="_blank" rel="noopener">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-
-      </a>
     </div>
 
     <!-- PROJECT 4: Supercross Game -->
@@ -1679,22 +1664,48 @@
       </div>
       <div class="gallery-grid">
         <div class="gallery-item" data-project="supercross" data-index="0">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 01</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Game announcement / key art</span></div>
+          <img src="https://www.dropbox.com/scl/fi/avav4xoeue19wy97h4zrw/Supercross-Game-Announce-Press.JPG?rlkey=abm1zsapune5i7r1xz6nc1h9j&st=kfw3k40j&raw=1" alt="Press interviews" loading="lazy" />
+        
         </div>
         <div class="gallery-item" data-project="supercross" data-index="1">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 02</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Athlete appearance / event activation</span></div>
+          <img src="https://www.dropbox.com/scl/fi/5zp141gcrwirfjs98zceb/SX-Video-Game-Social-Partnership.png?rlkey=hiusz0fp8b8i4lm9h4dvxa9fu&st=87ah74a3&raw=1" alt="Social partnership" loading="lazy" />
+        
         </div>
         <div class="gallery-item" data-project="supercross" data-index="2">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 03</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Social content / media coverage</span></div>
+          <img src="https://www.dropbox.com/scl/fi/a6z82c9jiaczet4uzps1i/Supercross-Game-Launch-Athlete-Demo.JPG?rlkey=key7dxzemhk09imp18i8eafmc&st=brdrffl3&raw=1" alt="Athlete demo" loading="lazy" />
+        
         </div>
         <div class="gallery-item" data-project="supercross" data-index="3">
-          <div class="gallery-placeholder"><span class="slot-num">✦ 04</span><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--ink-light)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg><span>Retail / experiential display</span></div>
+          <img src="https://www.dropbox.com/scl/fi/28xwnrgzz2jh4ay4h26he/Supercross-Game-Fan-Demo-Lounge.JPG?rlkey=y47vl6tsfp3u63qgmbrwlqtp5&st=70r4zxbn&raw=1" alt="Fan demo lounge" loading="lazy" />
+        
         </div>
       </div>
-      <a class="gallery-dropbox-link" href="https://www.dropbox.com/scl/fo/c9u2vtmvyfk428wngrtzi/APKVeYtcxnVs6nzoNdIViLs" target="_blank" rel="noopener">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    </div>
 
-      </a>
+    <!-- PROJECT 5: NBA/NHL Channel Optimization -->
+    <div class="gallery-project fade-up">
+      <div class="gallery-project-header">
+        <div class="gallery-project-title">Gaming Campaigns</div>
+        <span class="tag">Digital Growth</span>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-project="nba-links" data-index="0">
+          <img src="https://www.dropbox.com/scl/fi/pqy15tqce92pzg8tw9cyb/Crash-promo-price-asset.png?rlkey=f0i0vo83nhn1jpu1jedz9vyvp&st=3yebb1kr&raw=1" alt="Crash Bandicoot price promo" loading="lazy" />
+        
+        </div>
+        <div class="gallery-item" data-project="nba-links" data-index="1">
+          <img src="https://www.dropbox.com/scl/fi/4b34sasbh5c6aqrp1xtyv/THPS-Target-Red-Bull.png?rlkey=ixdckr9sqg85kjdzq3niqqq9y&st=kc47m7cc&raw=1" alt="Tony Hawk Red Bull retail" loading="lazy" />
+        
+        </div>
+        <div class="gallery-item" data-project="nba-links" data-index="2">
+          <img src="https://www.dropbox.com/scl/fi/2xqzeaadsijgypso39gsh/CrashBandicoot-GameStop-PreOrder-Incentive.jpg?rlkey=dl3te8ek0xdev5c7avd7ijr7b&st=53c4i4ep&raw=1" alt="Crash Bandicoot gift incentive" loading="lazy" />
+        
+        </div>
+        <div class="gallery-item" data-project="nba-links" data-index="3">
+          <img src="https://www.dropbox.com/scl/fi/vo46ecvch82onk6p9m0kp/COD-Digital-Download_Price-Promotion-Analysis.jpg?rlkey=t51firpdsrfm89qproqovpint&st=0kvbjy8x&raw=1" alt="COD pricing channel analysis" loading="lazy" />
+        
+        </div>
+      </div>
     </div>
 
   </div>
@@ -1773,7 +1784,7 @@
 <!-- ─── CONTINUED LEARNING ──────────────────────────────── -->
 <section id="learning" style="background: var(--cream-2); padding: 72px 0; border-top: 1px solid var(--border);">
   <div class="container">
-    <div class="fade-up" style="display: grid; grid-template-columns: 240px 1fr; gap: 60px; align-items: start;">
+    <div class="fade-up" class="learning-outer" style="display: grid; grid-template-columns: 240px 1fr; gap: 60px; align-items: start;">
       <div>
         <div class="section-label">Education</div>
         <h2 class="section-title" style="font-size: 1.6rem; margin-bottom: 12px;">Always learning.<br>Especially now.</h2>
@@ -1781,7 +1792,7 @@
       </div>
       <div style="display: flex; flex-direction: column; gap: 0;">
 
-        <div style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--border); position: relative;">
+        <div class="learning-row" style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--border); position: relative;">
           <div class="exp-company" style="padding-top: 3px;">Gonzaga University</div>
           <div class="exp-dot"></div>
           <div>
@@ -1796,7 +1807,7 @@
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--border); position: relative;">
+        <div class="learning-row" style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--border); position: relative;">
           <div class="exp-company" style="padding-top: 3px;">Kellogg Executive Education</div>
           <div class="exp-dot"></div>
           <div>
@@ -1805,7 +1816,7 @@
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--border); position: relative;">
+        <div class="learning-row" style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; border-bottom: 1px solid var(--border); position: relative;">
           <div class="exp-company" style="padding-top: 3px;">Louisiana State University</div>
           <div class="exp-dot"></div>
           <div>
@@ -1814,7 +1825,7 @@
           </div>
         </div>
 
-        <div style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; position: relative;">
+        <div class="learning-row" style="display: grid; grid-template-columns: 140px 1fr; gap: 0 24px; padding: 22px 0; position: relative;">
           <div class="exp-company" style="padding-top: 3px;">LSU E.J. Ourso College of Business</div>
           <div class="exp-dot"></div>
           <div>
@@ -2086,26 +2097,35 @@
   // Format: { src: "https://...", caption: "Description" }
   const caseImages = {
     "Ticketmaster B2B Website Redesign": [
-      // { src: "https://www.dropbox.com/scl/fi/wlef6dxgdp1np60lq6bpv/Ticketmaster-B2B-Website-Redesign-Horizontal.png?rlkey=vmb6lamsk0mf4txa3ckl64g4a&st=xt25l9qk&raw=1", caption: "Homepage screenshot" },
-      // { src: "https://www.dropbox.com/scl/fi/mgjh7crjocetu7d26bnch/business-site-Contact-page.png?rlkey=ou6kvxev3vszqmzh4s5zghx7s&st=grzo3hh2&raw=1", caption: "Contact page" },
-      // { src: "https://www.dropbox.com/scl/fi/ug36930l0keni5dww8zl2/business-site-Solutions-page.png?rlkey=an5jqxw6gl8hcjzptisa7se53&st=32bqjxr8&raw=1", caption: "Local customization" },
-      // { src: "https://www.dropbox.com/scl/fi/p6qtcvrpnokij81d7bukq/Channel-and-User-Journey-Analysis.png?rlkey=j6q9wt2cxr43fzza5k8r4a273&st=nmq4j77m&raw=1", caption: "Channel analysis insight" },
-
-
+      { src: "https://www.dropbox.com/scl/fi/wlef6dxgdp1np60lq6bpv/Ticketmaster-B2B-Website-Redesign-Horizontal.png?rlkey=vmb6lamsk0mf4txa3ckl64g4a&st=xt25l9qk&raw=1", caption: "Website homepage" },
+      { src: "https://www.dropbox.com/scl/fi/mgjh7crjocetu7d26bnch/business-site-Contact-page.png?rlkey=ou6kvxev3vszqmzh4s5zghx7s&st=grzo3hh2&raw=1", caption: "Contact / lead gen page" },
+      { src: "https://www.dropbox.com/scl/fi/ug36930l0keni5dww8zl2/business-site-Solutions-page.png?rlkey=an5jqxw6gl8hcjzptisa7se53&st=32bqjxr8&raw=1", caption: "Page customization / solutions" },
+      { src: "https://www.dropbox.com/scl/fi/p6qtcvrpnokij81d7bukq/Channel-and-User-Journey-Analysis.png?rlkey=j6q9wt2cxr43fzza5k8r4a273&st=nmq4j77m&raw=1", caption: "Channel and user journey analysis" },
+    ],
+    "NHL Playoff Sweepstakes Campaign": [
+      { src: "https://www.dropbox.com/scl/fi/p783ejhzvau38a1i47sxn/NHL-Sweepstakes-ROS-Banners.png?rlkey=tmv85dk0r6rvmixrl8z3za5e3&st=qxcews96&raw=1", caption: "NHL Playoff Sweepstakes ROS banners" },
+      { src: "https://www.dropbox.com/scl/fi/if2daqt1bqwhfbq250av0/NHL-Playoff-Sweeps-Paid-Social-Example.png?rlkey=nuzheurjwd0cdpubeiu2gxnaz&st=7foddmgl&raw=1", caption: "NHL Playoff Sweepstakes paid social" },
+      { src: "https://www.dropbox.com/scl/fi/8pln9coqhyg1s2bwlichr/NBA-BR-Takeover-Skin.png?rlkey=wji8qpjgjviu84ronpyh0rq39&st=gemttl78&raw=1", caption: "NBA Bleacher Report takeover skin" },
+      { src: "https://www.dropbox.com/scl/fi/p0zdo38tpc53fqrist9ex/NBA-Nav-Ticket-Link.png?rlkey=60la5j7nrjocvj7soupbv9v3n&st=k9mr75gs&raw=1", caption: "NBA.com nav ticket link analysis" },
+    ],
+    "Monster Jam \u00d7 Spin Master Walmart Display Tour": [
+      { src: "https://www.dropbox.com/scl/fi/oadj9qj7l5ziut3e8jsr8/Spin-Master-Experiential-Tour-Pic.jpg?rlkey=1gxkqlvfebruth7dtaougj7kk&st=d9cw3yk5&raw=1", caption: "Tour entrance" },
+      { src: "https://www.dropbox.com/scl/fi/wy8sdnruzdw31z3dcmakm/Spin-Master-Experiential_Influencer-Social.png?rlkey=gkcrb515p5hkydhukyl2rqphb&st=klzamg33&raw=1", caption: "Social influencer content" },
+      { src: "https://www.dropbox.com/scl/fi/i9k13lppskstpgknxsq73/IMG_0039.HEIC?rlkey=d2i1phqhrpcx8ltpl4p65k5f6&st=02cktpu3&raw=1", caption: "In-retail display" },
+      { src: "https://www.dropbox.com/scl/fi/c9lnl51liqd2fwfllutal/IMG_0021.heic?rlkey=q6kf0ap1d8bbqxuns9ez0tbg3&st=kv0365gm&raw=1", caption: "Monster truck display" },
+    ],
+    "Supercross Video Game Launch \u2014 Milestone Games": [
+      { src: "https://www.dropbox.com/scl/fi/avav4xoeue19wy97h4zrw/Supercross-Game-Announce-Press.JPG?rlkey=abm1zsapune5i7r1xz6nc1h9j&st=kfw3k40j&raw=1", caption: "Announcement press interviews" },
+      { src: "https://www.dropbox.com/scl/fi/5zp141gcrwirfjs98zceb/SX-Video-Game-Social-Partnership.png?rlkey=hiusz0fp8b8i4lm9h4dvxa9fu&st=87ah74a3&raw=1", caption: "Media social partnership" },
+      { src: "https://www.dropbox.com/scl/fi/a6z82c9jiaczet4uzps1i/Supercross-Game-Launch-Athlete-Demo.JPG?rlkey=key7dxzemhk09imp18i8eafmc&st=brdrffl3&raw=1", caption: "Athlete appearance and demo" },
+      { src: "https://www.dropbox.com/scl/fi/28xwnrgzz2jh4ay4h26he/Supercross-Game-Fan-Demo-Lounge.JPG?rlkey=y47vl6tsfp3u63qgmbrwlqtp5&st=70r4zxbn&raw=1", caption: "Fan demo lounge" },
     ],
     "NBA & NHL Digital Channel Optimization": [
-      // { src: "DIRECT_IMAGE_URL", caption: "NBA nav dropdown" },
-      // { src: "DIRECT_IMAGE_URL", caption: "Blackhawks HPTO" },
+      { src: "https://www.dropbox.com/scl/fi/p783ejhzvau38a1i47sxn/NHL-Sweepstakes-ROS-Banners.png?rlkey=tmv85dk0r6rvmixrl8z3za5e3&st=qxcews96&raw=1", caption: "NHL Playoff Sweepstakes ROS banners" },
+      { src: "https://www.dropbox.com/scl/fi/if2daqt1bqwhfbq250av0/NHL-Playoff-Sweeps-Paid-Social-Example.png?rlkey=nuzheurjwd0cdpubeiu2gxnaz&st=7foddmgl&raw=1", caption: "NHL Playoff Sweepstakes paid social" },
+      { src: "https://www.dropbox.com/scl/fi/8pln9coqhyg1s2bwlichr/NBA-BR-Takeover-Skin.png?rlkey=wji8qpjgjviu84ronpyh0rq39&st=gemttl78&raw=1", caption: "NBA Bleacher Report takeover skin" },
+      { src: "https://www.dropbox.com/scl/fi/p0zdo38tpc53fqrist9ex/NBA-Nav-Ticket-Link.png?rlkey=60la5j7nrjocvj7soupbv9v3n&st=k9mr75gs&raw=1", caption: "NBA.com nav ticket link analysis" },
     ],
-    "Monster Jam × Spin Master Walmart Display Tour": [
-      // { src: "DIRECT_IMAGE_URL", caption: "Display setup" },
-      // { src: "DIRECT_IMAGE_URL", caption: "Monster truck feature" },
-    ],
-    "Supercross Video Game Launch — Milestone Games": [
-      // { src: "DIRECT_IMAGE_URL", caption: "Game announcement" },
-      // { src: "DIRECT_IMAGE_URL", caption: "Event activation" },
-    ],
-
   };
 
   function openModal(card) {
