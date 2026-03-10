@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrea DeHart — Integrated Marketing</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' stop-color='%23C46FA8'/><stop offset='50%25' stop-color='%239270C8'/><stop offset='100%25' stop-color='%235C72D8'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='url(%23g)'/><text x='50' y='68' font-family='serif' font-size='52' font-weight='bold' fill='white' text-anchor='middle'>AD</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet" />
@@ -78,7 +77,8 @@
     .hero-eyebrow::before { content: ''; display: block; width: 32px; height: 1.5px; background: var(--grad-warm); }
     .hero-headline { font-family: 'Playfair Display', serif; font-size: 3.4rem; font-weight: 700; line-height: 1.12; color: var(--ink); margin-bottom: 28px; }
     .hero-headline em { font-style: italic; color: var(--purple-d); }
-    .hero-sub { font-size: 1.1rem; color: var(--ink-mid); line-height: 1.7; margin-bottom: 40px; max-width: 520px; }
+    .hero-sub { font-size: 1.1rem; color: var(--ink-mid); line-height: 1.7; margin-bottom: 20px; max-width: 520px; }
+    .hero-differentiator { font-size: 1rem; color: var(--purple-d); line-height: 1.65; margin-bottom: 40px; max-width: 520px; font-style: italic; border-left: 3px solid var(--purple); padding-left: 16px; }
     .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
     .btn-primary { padding: 14px 32px; border-radius: 100px; background: var(--purple); color: var(--white); font-weight: 600; font-size: .95rem; transition: background var(--transition), transform var(--transition); }
     .btn-primary:hover { background: var(--blue-d); transform: translateY(-2px); }
@@ -136,6 +136,13 @@
     .support-metric { font-size: .8rem; font-weight: 600; color: var(--blue-d); margin-top: 8px; }
     .work-divider { font-size: .78rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-light); margin: 48px 0 24px; display: flex; align-items: center; gap: 16px; }
     .work-divider::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .support-hidden { display: none; }
+    .support-hidden.is-open { display: grid; margin-top: 16px; }
+    .support-more-wrap { display: flex; justify-content: center; margin-top: 24px; }
+    .support-more-btn { background: none; border: 1.5px solid var(--border); border-radius: 100px; padding: 10px 28px; font-size: .85rem; font-weight: 600; color: var(--purple-d); cursor: pointer; display: flex; align-items: center; gap: 8px; transition: border-color var(--transition), color var(--transition), background var(--transition); letter-spacing: .02em; }
+    .support-more-btn:hover { border-color: var(--purple); background: var(--cream-2); }
+    .support-more-icon { transition: transform var(--transition); display: inline-block; }
+    .support-more-btn[aria-expanded="true"] .support-more-icon { transform: rotate(180deg); }
 
     /* GALLERY */
     #gallery { background: var(--cream); padding: 100px 0; border-top: 1px solid var(--border); }
@@ -292,7 +299,8 @@
       <div>
         <div class="hero-eyebrow">Integrated Marketing</div>
         <h1 class="hero-headline">Where brand strategy<br>meets <em>measurable</em> growth.</h1>
-        <p class="hero-sub">I build integrated marketing programs that connect brands with their audiences — across digital channels, retail partnerships, and live experiences. My work spans gaming, entertainment, and sports, with a consistent through-line: measurable growth in conversions, engagement, and revenue.</p>
+        <p class="hero-sub">My work spans sports, entertainment, and tech, with a focus on consistently delivering integrated programs that connect brands with their target audiences through digital channels, retail partnerships, and live experiences.</p>
+        <p class="hero-differentiator">I've launched programs that didn't exist before I got there — and become the go-to person for brands and teams when the stakes are high and the playbook doesn't exist yet.</p>
         <div class="hero-actions">
           <a href="#work" class="btn-primary">View My Work</a>
           <a href="#contact" class="btn-secondary">Get in Touch</a>
@@ -309,10 +317,10 @@
         </div>
         <div class="hero-card-label">Career Impact at a Glance</div>
         <div class="hero-stats">
-          <div><div class="stat-num"><span>$17M</span></div><div class="stat-label">Partnership marketing value negotiated with NBA &amp; NHL</div></div>
-          <div><div class="stat-num"><span>262</span></div><div class="stat-label">Net-new B2B clients from a single website redesign</div></div>
-          <div><div class="stat-num"><span>145%</span></div><div class="stat-label">Revenue lift from a single optimized channel placement</div></div>
-          <div><div class="stat-num"><span>281%</span></div><div class="stat-label">Retail sales lift from experiential partnership activation</div></div>
+          <div><div class="stat-num"><span>$17M</span></div><div class="stat-label">NBA &amp; NHL partner contracts negotiated</div></div>
+          <div><div class="stat-num"><span>11.8M</span></div><div class="stat-label">Impressions from NHL Playoff Sweepstakes</div></div>
+          <div><div class="stat-num"><span>14K+</span></div><div class="stat-label">New marketing contacts added</div></div>
+          <div><div class="stat-num"><span>281%</span></div><div class="stat-label">Retail sales lift, Monster Jam × Spin Master</div></div>
         </div>
       </div>
     </div>
@@ -375,7 +383,7 @@
   <div class="container">
     <div class="fade-up" style="margin-bottom: 48px;">
       <div class="section-label">Selected Work</div>
-      <h2 class="section-title">Five categories, spanning brand partnerships,<br>integrated campaigns, digital strategy, and B2B marketing.</h2>
+      <h2 class="section-title">From stadium partnerships to digital storefronts — the work speaks for itself.</h2>
     </div>
     <div class="filter-bar fade-up">
       <button class="filter-btn active" data-filter="all">All Work</button>
@@ -476,18 +484,23 @@
     </div>
     <div class="work-divider fade-up">Additional Work</div>
     <div class="support-grid fade-up">
-      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner Marketing</div><div class="support-title">NBA &amp; NHL Partnership Portfolio</div><div class="support-detail">Negotiated $17M in annual partnership marketing value across NBA and NHL team and league partnerships — aligning media buys, brand placements, and activation strategy to both media evaluations and business goals.</div><div class="support-metric">$17M negotiated annually</div></div>
-      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner Marketing</div><div class="support-title">Marvel Mastercard Launch — Feld × Synchrony Bank</div><div class="support-detail">Integrated digital, CRM, and live event elements to drive card sign-ups via a Marvel Universe Live partnership, with a separate journey for existing cardholders highlighting perks.</div><div class="support-metric">Multi-channel financial product launch</div></div>
-      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner Marketing</div><div class="support-title">Daytona Supercross Activation</div><div class="support-detail">Bought out the title partnership for the Daytona race, then sold pass-through inventory to five partners — turning a ~$200K investment into $740K in broadcast media exposure for Monster Energy.</div><div class="support-metric">$740K broadcast value / $200K investment</div></div>
-      <div class="support-card" data-category="campaign"><div class="support-cat">Integrated Campaign Strategy</div><div class="support-title">Crash Bandicoot &amp; Tony Hawk Retail Campaigns</div><div class="support-detail">Led retail and digital media campaigns for two iconic franchise relaunches — managing placements across home page takeovers, category banners, newsletters, social, and gift-with-purchase incentives.</div><div class="support-metric">Full-funnel retail execution</div></div>
-      <div class="support-card" data-category="campaign"><div class="support-cat">Integrated Campaign Strategy</div><div class="support-title">Monster Millions Contest — Monster Energy</div><div class="support-detail">Cross-functional national retail promotion tied to the Supercross series. Delivered 35K entries, 1M household reach of signage, and broadcast coverage of the finalist announcement.</div><div class="support-metric">35K entries · 1M HH reach</div></div>
-      <div class="support-card" data-category="campaign"><div class="support-cat">Integrated Campaign Strategy</div><div class="support-title">Call of Duty Warzone Seasonal Campaigns</div><div class="support-detail">Led creative for PlayStation and Xbox store ads and landing pages driving season pass and bundle sales, including high-value IP partnerships with Die Hard and Scream.</div><div class="support-metric">Digital storefront conversion focus</div></div>
-      <div class="support-card" data-category="digital"><div class="support-cat">Digital Growth &amp; Channel Optimization</div><div class="support-title">Flexible Ticket Management Campaign</div><div class="support-detail">Targeted 23 professional sports teams' season ticket holder bases through a closed-channel partnership campaign promoting resale and ticket management flexibility — driving a 15% lift in fan adoption.</div><div class="support-metric">15% lift in feature adoption</div></div>
-      <div class="support-card" data-category="digital"><div class="support-cat">Digital Growth &amp; Channel Optimization</div><div class="support-title">Call of Duty Digital Download Sales Analysis</div><div class="support-detail">Analyzed in-store vs. digital price promotion performance for Call of Duty download cards. Confirmed in-store promotions drove 259% lift vs. 114% in digital storefronts — informing future channel investment strategy.</div><div class="support-metric">127% higher in-store lift vs. digital</div></div>
-      <div class="support-card" data-category="digital"><div class="support-cat">Digital Growth &amp; Channel Optimization</div><div class="support-title">NHL Digital Dasher Board Messaging Strategy</div><div class="support-detail">Developed Ticketmaster's first messaging framework for NHL digital dasher boards — segmented copy for home vs. away game contexts and introduced flexible ticket messaging to grow resale awareness.</div><div class="support-metric">First-ever messaging framework for format</div></div>
+      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner</div><div class="support-title">Tony Hawk Pro Skater 1+2 × Red Bull × Target</div><div class="support-detail">While at Activision Blizzard, delivered an integrated retail partnership campaign for the Tony Hawk Pro Skater 1+2 launch — connecting the game to Red Bull's lifestyle audience through omni-channel storytelling and in-store customer acquisition at Target.</div><div class="support-metric">$230K+ incremental marketing value</div></div>
+      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner</div><div class="support-title">Marvel Mastercard Launch — Feld × Synchrony Bank</div><div class="support-detail">Integrated digital, CRM, and live event elements to drive card sign-ups via a Marvel Universe Live partnership, with a separate journey for existing cardholders highlighting perks.</div><div class="support-metric">Multi-channel financial product launch</div></div>
+      <div class="support-card" data-category="digital"><div class="support-cat">Digital Growth</div><div class="support-title">Flexible Ticket Management Campaign</div><div class="support-detail">Targeted 23 professional sports teams' season ticket holder bases through a closed-channel partnership campaign promoting resale and ticket management flexibility — driving a 15% lift in fan adoption.</div><div class="support-metric">15% lift in feature adoption</div></div>
+    </div>
+    <div class="support-more-wrap fade-up">
+      <button class="support-more-btn" id="supportToggle" aria-expanded="false">See more work <span class="support-more-icon">↓</span></button>
+    </div>
+    <div class="support-grid support-hidden" id="supportExtra" aria-hidden="true">
+      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner</div><div class="support-title">NBA &amp; NHL Partnership Portfolio</div><div class="support-detail">Negotiated $17M in annual partnership marketing value across NBA and NHL team and league partnerships — aligning media buys, brand placements, and activation strategy to both media evaluations and business goals.</div><div class="support-metric">$17M negotiated annually</div></div>
+      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner</div><div class="support-title">Daytona Supercross Activation</div><div class="support-detail">Bought out the title partnership for the Daytona race, then sold pass-through inventory to five partners — turning a ~$200K investment into $740K in broadcast media exposure for Monster Energy.</div><div class="support-metric">$740K broadcast value / $200K investment</div></div>
+      <div class="support-card" data-category="campaign"><div class="support-cat">Integrated Campaign</div><div class="support-title">Crash Bandicoot &amp; Tony Hawk Retail Campaigns</div><div class="support-detail">Led retail and digital media campaigns for two iconic franchise relaunches — managing placements across home page takeovers, category banners, newsletters, social, and gift-with-purchase incentives.</div><div class="support-metric">Full-funnel retail execution</div></div>
+      <div class="support-card" data-category="campaign"><div class="support-cat">Integrated Campaign</div><div class="support-title">Monster Millions Contest — Monster Energy</div><div class="support-detail">Cross-functional national retail promotion tied to the Supercross series. Delivered 35K entries, 1M household reach of signage, and broadcast coverage of the finalist announcement.</div><div class="support-metric">35K entries · 1M HH reach</div></div>
+      <div class="support-card" data-category="campaign"><div class="support-cat">Integrated Campaign</div><div class="support-title">Call of Duty Warzone Seasonal Campaigns</div><div class="support-detail">Led creative for PlayStation and Xbox store ads and landing pages driving season pass and bundle sales, including high-value IP partnerships with Die Hard and Scream.</div><div class="support-metric">Digital storefront conversion focus</div></div>
+      <div class="support-card" data-category="digital"><div class="support-cat">Digital Growth</div><div class="support-title">Call of Duty Digital Download Sales Analysis</div><div class="support-detail">Analyzed in-store vs. digital price promotion performance for Call of Duty download cards. Confirmed in-store promotions drove 259% lift vs. 114% in digital storefronts — informing future channel investment strategy.</div><div class="support-metric">127% higher in-store lift vs. digital</div></div>
+      <div class="support-card" data-category="digital"><div class="support-cat">Digital Growth</div><div class="support-title">NHL Digital Dasher Board Messaging Strategy</div><div class="support-detail">Developed Ticketmaster's first messaging framework for NHL digital dasher boards — segmented copy for home vs. away game contexts and introduced flexible ticket messaging to grow resale awareness.</div><div class="support-metric">First-ever messaging framework for format</div></div>
       <div class="support-card" data-category="b2b"><div class="support-cat">B2B &amp; Client Marketing</div><div class="support-title">B2B Content Program — Blog, LinkedIn &amp; Newsletter</div><div class="support-detail">Produced ongoing content for Ticketmaster B2B channels. Drove a 30.1% newsletter open rate and 6.5% LinkedIn engagement rate.</div><div class="support-metric">30.1% open rate · 6.5% LinkedIn ER</div></div>
       <div class="support-card" data-category="b2b"><div class="support-cat">B2B &amp; Client Marketing</div><div class="support-title">NBA &amp; Seattle Kraken Fan Surveys</div><div class="support-detail">Designed and ran fan research surveys in partnership with the NBA Fan Forum and Seattle Kraken — aligning questions across sales, research, and category management teams.</div><div class="support-metric">Primary research driving messaging strategy</div></div>
-      <div class="support-card" data-category="brand"><div class="support-cat">Brand &amp; Partner Marketing</div><div class="support-title">Tony Hawk Pro Skater 1+2 × Red Bull × Target</div><div class="support-detail">While at Activision Blizzard, delivered an integrated retail partnership campaign for the Tony Hawk Pro Skater 1+2 launch — connecting the game to Red Bull's lifestyle audience through omni-channel storytelling and in-store customer acquisition at Target.</div><div class="support-metric">$230K+ incremental marketing value</div></div>
       <div class="support-card" data-category="b2b"><div class="support-cat">B2B &amp; Client Marketing</div><div class="support-title">B2B Website × Sales Messaging Alignment</div><div class="support-detail">Led a structured alignment process between marketing and sales leadership to ensure site messaging reflected how the sales team positioned the product — including unique value propositions per market segment.</div><div class="support-metric">Cross-functional alignment at executive level</div></div>
     </div>
   </div>
@@ -755,6 +768,19 @@
   // NAV
   const nav = document.getElementById('nav');
   window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
+  // SUPPORT TOGGLE
+  const supportToggle = document.getElementById('supportToggle');
+  const supportExtra = document.getElementById('supportExtra');
+  if (supportToggle && supportExtra) {
+    supportToggle.addEventListener('click', () => {
+      const isOpen = supportExtra.classList.toggle('is-open');
+      supportToggle.setAttribute('aria-expanded', isOpen);
+      supportExtra.setAttribute('aria-hidden', !isOpen);
+      supportToggle.querySelector('.support-more-icon').textContent = isOpen ? '↑' : '↓';
+      supportToggle.innerHTML = (isOpen ? 'See less ' : 'See more ') + '<span class="support-more-icon">' + (isOpen ? '↑' : '↓') + '</span>';
+    });
+  }
 
   // FADE UP
   const obs = new IntersectionObserver((entries) => {
